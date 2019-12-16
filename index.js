@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client()
 const flexDiscord = require('./flex.js');
 const flex = new flexDiscord(Discord ,client, "!")
-const token = "NTk5MzQ1OTIyMjkxNDAwNzA2.XfXhvQ.3u-88IH3nbLdLXIfZseYUyCR-vc";
+const token = process.env.arcadia
 
 client.on("ready", async () =>{
     console.log(`${client.user.username}, is online and is in ${client.guilds.size}`)
