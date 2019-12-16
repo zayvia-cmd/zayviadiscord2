@@ -73,8 +73,7 @@ channel.fetchMessage(packet.d.message_id).then(message => {
     }
 });
 });
-
 flex.initialize(token);
-client.login(token);
+client.login(token, process.env.token);
 
 
